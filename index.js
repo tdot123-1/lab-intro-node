@@ -15,7 +15,7 @@ class SortedList {
 
   get(pos) {
 
-    if (pos > this.length) {
+    if (pos >= this.length) {
       throw new Error("OutOfBounds");
     }
 
@@ -25,7 +25,7 @@ class SortedList {
   max() {
 
     if (this.length === 0) {
-      throw new Error("emptySortedList");
+      throw new Error("EmptySortedList");
     }
 
     // assuming the list is sorted in ascending order
@@ -34,7 +34,7 @@ class SortedList {
 
   min() {
     if (this.length === 0) {
-      throw new Error("emptySortedList");
+      throw new Error("EmptySortedList");
     }
     
     // assuming the list is sorted in ascending order
